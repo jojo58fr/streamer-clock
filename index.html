@@ -29,7 +29,7 @@
 		if (urlParams["style"]) output.setAttribute("style", urlParams["style"]);
 		if (urlParams["bodyStyle"]) document.body.setAttribute("style", urlParams["bodyStyle"]);
 
-		if (urlParams["format"] == null) urlParams["format"] = "HH:mm A"; //Default format: Hours:Minutes and AM/PM
+		if (urlParams["format"] == null) urlParams["format"] = "hh:mm A"; //Default format: Hours:Minutes and AM/PM
 
 
 		var c;
@@ -47,13 +47,14 @@
 	  font-family: scienceFair;
 	  src: url(./Font/scienceFair.otf) format("opentype");
 	}
+	
 	#output {
 		font: bold 30px scienceFair, monospace; 
-		color: lightgray; 
+		color: white; 
 		display: inline-block; 
 		border-radius: 5px; 
 		padding: 2px 5px; 
-		background-color: rgba(0, 0, 0, 0.5)
+		background: #009acd 75%;
 	}
   </style>
   
