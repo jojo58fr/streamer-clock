@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family={{googleFont}}:100,200,300,400,500,600,700,800,900');
+
+#outputWrapper {
+    width: fit-content;
+    display: flex;
+    flex-direction: column; 
+    border-radius: 5px; 
+    padding: 2px 5px; 
+    background: {{backgroundColor}} {{backgroundOpacity}}%;
+}
+
+#outputDay, #output {
+    font-family: '{customFont}', '{googleFont}', Nunito, Arial, sans-serif;
+    color: {{fontColor}}; 
+}
+
+#outputDay {
+    font-size: 18px;
+    align-self: center;
+    /*font-weight: bold;*/
+}
+
+#output {
+    font-size: 30px;
+    font-weight: bold;
+}

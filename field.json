@@ -1,0 +1,89 @@
+{
+    "previewModeLabel": {
+        "label": "Widget version: 1.0.0",
+        "group": "Widget information",
+        "value": "1.0.0",
+        "type": "hidden"
+    },
+    "previewModeLabel2": {
+        "label": "A simple clock for everyone !",
+        "group": "Widget information",
+        "type": "hidden"
+    },
+    "previewModeLabel3": {
+        "label": "Made ❤️ Patreon: Nthai_KoleCtioN",
+        "group": "Widget information",
+        "type": "hidden"
+    },
+    "previewModeLabel4": {
+        "label": "Please check my patreon:",
+        "group": "Widget information",
+        "type": "hidden"
+    },
+    "previewModeLabel5": {
+        "label": "https://www.patreon.com/TakuDev",
+        "group": "Widget information",
+        "type": "hidden"
+    },
+    "dayFormat": {
+        "group": "Clock properties",
+        "type": "dropdown",
+        "label": "Show Day (Select Format)",
+        "value": "0",
+        "options": {
+            "0": "OFF",
+            "1": "Year only (short)",
+            "2": "Year only (long)",
+            "3": "Day/Month",
+            "4": "Day/Month/Year(short)",
+            "5": "Day/Month/Year(long)",
+            "6": "Day(text) Day/Month/Year(short)",
+            "7": "Day(text) Day/Month/Year(long)"
+        }
+    },
+    "dayFormatCustomLabel": {
+        "label": "Special Format Date",
+        "group": "Clock properties",
+        "type": "hidden"
+    },
+    "dayFormatCustom": {
+        "group": "Clock properties",
+        "type": "text",
+        "label": "Leave empty to ignore (MM/DD/YYYY)",
+        "value": ""
+    },
+    "clockMode": {
+        "group": "Clock properties",
+        "type": "dropdown",
+        "label": "Clock Format",
+        "value": "12",
+        "options": {
+            "12": "12 Hours",
+            "24": "24 Hours"
+        }
+    },
+    "googleFont": {
+        "group": "Appearance",
+        "type": "googleFont",
+        "label": "Choose a font from Google",
+        "value": "Open Sans"
+    },
+    "customFont": {
+        "group": "Appearance",
+        "type": "text",
+        "label": "Custom Font (leave empty to ignore)",
+        "value": "Science Fair"
+    },
+    "backgroundColor": {
+        "group": "Appearance",
+        "type": "colorpicker",
+        "label": "Background Color",
+        "value": "#009acdbf"
+    },
+    "fontColor": {
+        "group": "Appearance",
+        "type": "colorpicker",
+        "label": "Font Color",
+        "value": "#ffffff"
+    }
+}

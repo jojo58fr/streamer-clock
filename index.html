@@ -1,62 +1,20 @@
 <!DOCTYPE html>
-<html>
 
 <head>
-  <meta charset="UTF-8">
-  <title>A simple clock</title>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="#" />
+	<link rel="stylesheet" href="./style.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/metropolis.min.css" />
 </head>
 
-<body translate="no" >
-  <div id="output"></div>
-
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js'></script>
-  <script>
-		// https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
-		var urlParams;
-		(function () {
-			var match,
-				pl     = /\+/g,  // Regex for replacing addition symbol with a space
-				search = /([^&=]+)=?([^&]*)/g,
-				decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
-				query  = window.location.search.substring(1);
-
-			urlParams = {};
-			while (match = search.exec(query))
-			   urlParams[decode(match[1])] = decode(match[2]);
-		})();
-
-		var output = document.getElementById("output");
-		if (urlParams["style"]) output.setAttribute("style", urlParams["style"]);
-		if (urlParams["bodyStyle"]) document.body.setAttribute("style", urlParams["bodyStyle"]);
-
-		if (urlParams["format"] == null) urlParams["format"] = "hh:mm A"; //Default format: Hours:Minutes and AM/PM
-
-
-		var c;
-		setInterval(
-		c = function() {
-			output.innerText = moment().format(urlParams["format"] || '');
-		}, 1000);
-		c();
-
-  </script>
-  
-  <!-- Default style -->
-  <style>
-	@font-face {
-	  font-family: scienceFair;
-	  src: url(./Font/scienceFair.otf) format("opentype");
-	}
+<body>
+	<div id="outputWrapper">
+		<div id="outputDay"></div>
+		<div id="output"></div>
+	</div>
 	
-	#output {
-		font: bold 30px scienceFair, monospace; 
-		color: white; 
-		display: inline-block; 
-		border-radius: 5px; 
-		padding: 2px 5px; 
-		background: #009acd 75%;
-	}
-  </style>
-  
 </body>
-</html>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js'></script> <!-- TODO: A update ? -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script> <!-- TODO: A Enlever si pas animation ? -->
+<script src="./script.js"></script>
