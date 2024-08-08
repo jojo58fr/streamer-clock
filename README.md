@@ -1,8 +1,26 @@
-# streamer-clock (Streamelements Widget)
-A simple clock for your stream ! give Date and hours with a simple html file
+# 🕰️ streamer-clock (Streamelements Widget)
 
-A script for Streamelements (https://streamelements.com/) and Obs Studio (https://obsproject.com/) or other streaming software to embed a current date and timestamp with a customizable design. No other softwares and plugins are needed. Just Streamelements.
-Feel free to contribute to this projects, its one of free widget that i [release here](https://github.com/jojo58fr/free-streamelements-widgets)
+<img src="./doc/images/overview/repository-banner.png"/>
+
+[:computer: Downloading & Release notes](https://github.com/jojo58fr/ccsrch-adv/releases)   |  [:warning: Known issues](#known-issues) | [:bug: Report bugs](https://github.com/jojo58fr/streamer-clock/issues)
+
+> A simple clock for your stream ! Give Date and hours with a bunch of customizations.
+No other softwares and plugins are needed. Just Streamelements.
+Feel free to contribute to this projects, its one of free widget that i just [release here](https://github.com/jojo58fr/free-streamelements-widgets). It's a fork from a gist with lots of improvements and changing to use it with streamelements. 
+
+### Copyright
+
+Copyright (c) 2020 Joachim Miens (contact@joachim-miens.com)
+
+This application is licensed under the MIT License (see below & COPYING).
+
+This base project is a fork of a gist as maintained by [sam0737/clock.html](https://gist.github.com/sam0737/a0ee8ca253fc5c84b2aa2ac018f7b8ad)
+
+### Known Issues
 
 
-Forked from a gist sam0737/clock.html ( https://gist.github.com/sam0737/a0ee8ca253fc5c84b2aa2ac018f7b8ad ). Base Original creator sam0737
+### Contributors
+
+
+### License
+See licence file for more info
