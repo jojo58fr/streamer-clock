@@ -78,12 +78,24 @@
         "group": "Appearance",
         "type": "colorpicker",
         "label": "Background Color",
+        "value": "#000000eb"
+    },
+    "borderColor": {
+        "group": "Appearance",
+        "type": "colorpicker",
+        "label": "Border Bottom Color",
+        "value": "#009acdbf"
+    },
+    "dateFontColor": {
+        "group": "Appearance",
+        "type": "colorpicker",
+        "label": "Date Font Color",
         "value": "#009acdbf"
     },
     "fontColor": {
         "group": "Appearance",
         "type": "colorpicker",
-        "label": "Font Color",
+        "label": "Hours Font Color",
         "value": "#ffffff"
     }
 }

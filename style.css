@@ -6,7 +6,9 @@
     flex-direction: column; 
     border-radius: 5px; 
     padding: 2px 5px; 
-    background: {{backgroundColor}} {{backgroundOpacity}}%;
+    
+    background: {{backgroundColor}};/*{{backgroundColor}} {{backgroundOpacity}}%;*/
+    border-bottom: 12px solid {{borderColor}};/*{{backgroundBorder}};*/
 }
 
 #outputDay, #output {
@@ -18,6 +20,7 @@
     font-size: 18px;
     align-self: center;
     /*font-weight: bold;*/
+    color: {{dateFontColor}};
 }
 
 #output {

@@ -120,7 +120,7 @@ var c;
 setInterval(
 c = function() {
     //let format = (!IsNullOrWhitespace(dayFormat)) ? `${dayFormat} ${clockFormat}` : `${clockFormat}`;
-    if(!IsNullOrWhitespace(outputDay)) 
+    if(!IsNullOrWhitespace(dayFormat)) 
     {
         outputDay.innerText = moment().format(dayFormat);
     }
