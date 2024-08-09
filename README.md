@@ -2,7 +2,7 @@
 
 <img src="./doc/images/overview/repository-banner.png"/>
 
-[:computer: Downloading & Release notes](https://github.com/jojo58fr/ccsrch-adv/releases)   |  [:warning: Known issues](#known-issues) | [:bug: Report bugs](https://github.com/jojo58fr/streamer-clock/issues)
+[:computer: Downloading & Release notes](https://github.com/jojo58fr/streamer-clock/releases)   |  [:warning: Known issues](#known-issues) | [:bug: Report bugs](https://github.com/jojo58fr/streamer-clock/issues)
 
 > A simple clock for your stream ! Give Date and hours with a bunch of customizations.
 No other softwares and plugins are needed. Just Streamelements.
