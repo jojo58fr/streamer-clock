@@ -8,6 +8,11 @@
 No other softwares and plugins are needed. Just Streamelements.
 Feel free to contribute to this projects, its one of free widget that i just [release here](https://github.com/jojo58fr/free-streamelements-widgets). It's a fork from a gist with lots of improvements and changing to use it with streamelements. 
 
+### Installation
+
+Pour une installation plus facile, vous pouvez installer avec le lien:
+http://streamelements.com/dashboard/overlays/share/66b37b65b624f23d88a142fd
+
 ### Copyright
 
 Copyright (c) 2020 Joachim Miens (contact@joachim-miens.com)
