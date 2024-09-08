@@ -29,16 +29,16 @@
         "group": "Clock properties",
         "type": "dropdown",
         "label": "Show Day (Select Format)",
-        "value": "0",
+        "value": "",
         "options": {
-            "0": "OFF",
-            "1": "Year only (short)",
-            "2": "Year only (long)",
-            "3": "Day/Month",
-            "4": "Day/Month/Year(short)",
-            "5": "Day/Month/Year(long)",
-            "6": "Day(text) Day/Month/Year(short)",
-            "7": "Day(text) Day/Month/Year(long)"
+            "": "OFF",
+            "YY": "Year only (short)",
+            "YYYY": "Year only (long)",
+            "DD/MM": "Day/Month",
+            "DD/MM/YY": "Day/Month/Year(short)",
+            "DD/MM/YYYY": "Day/Month/Year(long)",
+            "dddd DD/MM/YY": "Day(text) Day/Month/Year(short)",
+            "dddd DD/MM/YYYY": "Day(text) Day/Month/Year(long)"
         }
     },
     "dayFormatCustomLabel": {
@@ -56,10 +56,12 @@
         "group": "Clock properties",
         "type": "dropdown",
         "label": "Clock Format",
-        "value": "12",
+        "value": "hh:mm A",
         "options": {
-            "12": "12 Hours",
-            "24": "24 Hours"
+            "hh:mm A": "12 Hours",
+            "HH:mm": "24 Hours",
+            "hh:mm:ss A": "12 Hours (with seconds)",
+            "HH:mm:ss": "24 Hours (with seconds)"
         }
     },
     "googleFont": {

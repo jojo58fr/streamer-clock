@@ -3,17 +3,18 @@
 #outputWrapper {
     width: fit-content;
     display: flex;
-    flex-direction: column; 
-    border-radius: 5px; 
-    padding: 2px 5px; 
-    
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 2px 5px;
+
     background: {{backgroundColor}};/*{{backgroundColor}} {{backgroundOpacity}}%;*/
     border-bottom: 12px solid {{borderColor}};/*{{backgroundBorder}};*/
 }
 
-#outputDay, #output {
+#outputDay, #outputTime {
     font-family: '{customFont}', '{googleFont}', Nunito, Arial, sans-serif;
-    color: {{fontColor}}; 
+    color: {{fontColor}};
 }
 
 #outputDay {
@@ -23,7 +24,7 @@
     color: {{dateFontColor}};
 }
 
-#output {
+#outputTime {
     font-size: 30px;
     font-weight: bold;
 }

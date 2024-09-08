@@ -29,6 +29,16 @@ var urlParams;
 var fieldData = null;
 var dayFormat = "";
 var clockFormat = "hh:mm A";
+var outputDay = document.getElementById("outputDay");
+var outputTime = document.getElementById("outputTime");
+
+
+function tick() {
+    if(!IsNullOrWhitespace(dayFormat))  {
+        outputDay.innerText = moment().format(dayFormat);
+    }
+    outputTime.innerText = moment().format(`${clockFormat}`);
+}
 
 window.addEventListener('onWidgetLoad', function (obj) {
 	var fieldData = obj.detail.fieldData;
@@ -50,85 +60,24 @@ window.addEventListener('onWidgetLoad', function (obj) {
             urlParams[decode(match[1])] = decode(match[2]);
     })();*/
 
-    var outputDay       = document.getElementById("outputDay");
-    var output          = document.getElementById("output");
 
-    //if (urlParams["style"]) output.setAttribute("style", urlParams["style"]);
+    //if (urlParams["style"]) outputTime.setAttribute("style", urlParams["style"]);
     //if (urlParams["bodyStyle"]) document.body.setAttribute("style", urlParams["bodyStyle"]);
 
     //if (urlParams["format"] == null) urlParams["format"] = "hh:mm A"; //Default format: Hours:Minutes and AM/PM
 
     console.log(`[STREAMER-CLOCK] Set to ${fieldData.clockMode} Format.`);
 
-    switch(fieldData.dayFormat)
-    {
-        case "1":
-            dayFormat = "YY";
-            break;
-        case "2":
-            dayFormat = "YYYY";
-            break;
-        case "3":
-            dayFormat = "DD/MM";
-            break;
-        case "4":
-            dayFormat = "DD/MM/YY";
-            break;
-        case "5":
-            dayFormat = "DD/MM/YYYY";
-            break;
-        case "6":
-            dayFormat = "dddd DD/MM/YY";
-            break;
-        case "7":
-            dayFormat = "dddd DD/MM/YYYY";
-            break;
-
-        default:
-        case "0":
-            clockFormat = "";
-            break;
-    }
-
-    switch(fieldData.clockMode)
-    {
-        case "24":
-            clockFormat = "HH:mm";
-            break;
-
-        default:
-        case "12":
-            clockFormat = "hh:mm A";
-            break;
-    }
-
+    dayFormat = fieldData.dayFormat;
     console.log("DayFormat(b):", dayFormat);
-
     if(!IsNullOrWhitespace(fieldData.dayFormatCustom))
     {
         dayFormat = fieldData.dayFormatCustom;
+        console.log("DayFormat(a):", dayFormat);
     }
 
-    console.log("DayFormat(a):", dayFormat);
+    clockFormat = fieldData.clockMode;
 
-	//refreshValues();
-
+    setInterval(tick, 1000);
+    tick()
 });
-
-
-var c;
-setInterval(
-c = function() {
-    //let format = (!IsNullOrWhitespace(dayFormat)) ? `${dayFormat} ${clockFormat}` : `${clockFormat}`;
-    if(!IsNullOrWhitespace(dayFormat)) 
-    {
-        outputDay.innerText = moment().format(dayFormat);
-    }
-    
-    output.innerText = moment().format(`${clockFormat}`);
-}, 1000);
-c();
-
-
-
-
