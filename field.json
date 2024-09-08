@@ -59,7 +59,9 @@
         "value": "hh:mm A",
         "options": {
             "hh:mm A": "12 Hours",
-            "HH:mm": "24 Hours"
+            "HH:mm": "24 Hours",
+            "hh:mm:ss A": "12 Hours (with seconds)",
+            "HH:mm:ss": "24 Hours (with seconds)"
         }
     },
     "googleFont": {
